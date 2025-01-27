@@ -6,7 +6,7 @@ body
 .contenedor
 {
     width: 1300px;
-    height: 3524px;
+    height: 3700px;
     top: 200px;
     left: 70px;
     margin: auto;
@@ -202,6 +202,8 @@ h2
 .End
 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1302px;
     height: 832px;
     gap: 33px;
@@ -212,7 +214,9 @@ h2
 .End .bosque
 {
     height: 667px;
+    border-radius: 12px;
     background-image: url(../imagenes/bosque.png);
+    padding: 25px;
 }
 
 .End button
@@ -232,13 +236,34 @@ h2
     font-family: Poppins, sans-serif;
 }
 
-.End .crema
-{
+.End .crema {
+    width: 1165px;
+    height: 356px;
     background-color: #FCE2D7;
     color: #2B2B2B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: -80px;
+    margin-bottom: 50px;
+}
+
+.End .crema .EndHoja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.bosque, .crema {
+    width: 100%;
 }
 
 .NavBot {
+    max-width: 1300px;
+    height: 245px;
     background-color: #285E67;
     display: flex;
     align-items: center;
@@ -248,6 +273,7 @@ h2
 
 .NavBot img {
     height: 26px;
+    padding: 5px;
 }
 
 
@@ -261,6 +287,7 @@ h2
 
 .NavBot ul li {
     display: inline;
+    color: #FFFFFF;
 }
 
 .NavBot ul li a {
