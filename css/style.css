@@ -158,6 +158,32 @@ h2
     height: 57px;
 }
 
+.Mid .divFlor .Flor ul {
+    width: 500px;
+    list-style-type: none;
+}
+
+.Mid .divFlor .Flor ul li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.Mid .divFlor .Flor ul li img {
+    margin-right: 10px;
+}
+
+.Mid .divFlor .onTop{
+    display: block;
+    width: 800px;
+    text-align: center;
+}
+
+.Mid .divFlor .onTop ul{
+    list-style-type: none;
+}
+
 .Bot
 {
     width: 1300px;
@@ -189,8 +215,8 @@ h2
 
 .divHoja .Hoja
 {
-    width: 260px;
-    height: 187.54px;
+    width: 350px;
+    height: 347.5px;
 }
 
 .divHoja .Hoja img
