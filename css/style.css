@@ -12,6 +12,7 @@ body
     margin: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 h1
@@ -31,22 +32,40 @@ h2
     color: #2B2B2B;
 }
 
-.NavTop .listaNavTop{
-    width: 347px;
-    height: 24px;
+.NavTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.NavTop img {
+    height: 26px;
+}
+
+.NavTop .listaNavTop {
+    display: flex;
 }
 
 .NavTop .listaNavTop ul {
+    display: flex;
     list-style-type: none;
     gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-.NavTop .listaNavTop ul li a{
+.NavTop .listaNavTop ul li {
+    display: inline;
+}
+
+.NavTop .listaNavTop ul li a {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    text-decoration: none;
+    color: #2B2B2B;
 }
 
 .Top {
@@ -87,11 +106,14 @@ h2
     height: 391px;
 }
 
-.Mid
-{
+.Mid {
     width: 1300px;
-    height: 446px;
+    height: 1300px;
     gap: 5px;
+}
+
+.Mid h2
+{
     padding-left: 122px;
     padding-right: 122px;
 }
@@ -102,6 +124,8 @@ h2
     gap: 125px;
     padding-right: 112px;
     height: 446px;
+    padding-left: 122px;
+    padding-right: 122px;
 }
 
 .Mid .divHoja img
@@ -110,31 +134,16 @@ h2
     height: 294px;
 }
 
-.Mid .divHoja .Hoja
-{
-    width: 260px;
-    height: 187.54px;
-}
-
-.Mid .divHoja .Hoja img
-{
-    width: 58px;
-    height: 57px;
-}
-
-.Mid .divFlor
-{
+.Mid .divFlor {
     display: flex;
-    gap: 69px;
-    padding-right: 112px;
-    height: 446px;
+    height: 578px;
+    margin-top: 50px;
 }
 
 .Mid .divFlor img
 {
-    width: 291px;
-    height: 294px;
-    padding-left: 122px;
+    width: 623px;
+    height: 578px;
 }
 
 .Mid .divFlor .Flor
@@ -175,18 +184,89 @@ h2
 {
     width: 291px;
     height: 294px;
-    padding-left: 122px;
+    padding-right: 122px;
 }
 
-.Bot .divHoja .Hoja
+.divHoja .Hoja
 {
     width: 260px;
     height: 187.54px;
 }
 
-.Bot .divHoja .Hoja img
+.divHoja .Hoja img
 {
     width: 58px;
     height: 57px;
 }
 
+.End
+{
+    display: flex;
+    width: 1302px;
+    height: 832px;
+    gap: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.End .bosque
+{
+    height: 667px;
+    background-image: url(../imagenes/bosque.png);
+}
+
+.End button
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    width: 251px;
+    height: 56px;
+    border-radius: 67px;
+    padding: 16px;
+    gap: 16px;
+    align-self: center;
+    font-size: 21.33px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: Poppins, sans-serif;
+}
+
+.End .crema
+{
+    background-color: #FCE2D7;
+    color: #2B2B2B;
+}
+
+.NavBot {
+    background-color: #285E67;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.NavBot img {
+    height: 26px;
+}
+
+
+.NavBot ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBot ul li {
+    display: inline;
+}
+
+.NavBot ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
